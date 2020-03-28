@@ -5,6 +5,8 @@ const hbs=require('hbs');
 const geocoding=require('./utils/geocoding');
 const forecast=require('./utils/forecast');
 
+const portno=process.env.PORT || 3000;
+
 // TO SET PATH CONFIGURATION OF EXPRESS..
 const PublicPath=path.join(__dirname,'../public');
 const viewspath=path.join(__dirname,'../template/views');
@@ -88,7 +90,7 @@ app.get('*',(req,res)=>{
     })
 })
 
-const portno=2000;
+
 app.listen(portno,()=>{
     console.log('Server is running on port '+portno+'.');
 });
