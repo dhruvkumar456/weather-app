@@ -5,7 +5,7 @@ const hbs=require('hbs');
 const geocoding=require('./utils/geocoding');
 const forecast=require('./utils/forecast');
 
-const portno=process.env.PORT || 3001;
+const portno=process.env.PORT || 3005;
 
 // TO SET PATH CONFIGURATION OF EXPRESS..
 const PublicPath=path.join(__dirname,'../public');
