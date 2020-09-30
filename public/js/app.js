@@ -14,7 +14,8 @@ weatherForm.addEventListener('submit',(event)=>{
     messageOne.textContent='Loading...';
     messageTwo.textContent='';
     messageThree.textContent='';
-
+    
+    //calling api endpoint of nodejs(i.e. a get request)
     fetch('/weather?address='+address.value).then((response)=>{
         response.json().then((data)=>{
            console.log(data);
