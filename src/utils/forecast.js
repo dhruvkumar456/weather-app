@@ -3,7 +3,7 @@ const request=require('request');
 //Longitude,latitude=>wheather information.
 const forecast=(center,callback)=>{
     const url='https://api.darksky.net/forecast/9fc09672e7e6f663d9145b361753d110/'+center+'?units=si';
-    request({url, json:true},(error,{body}={})=>{
+    request({url, json:true},(error,{body}={})=>{     //this command is used to fetch data from api endpoint(json data)
         if(error){
             callback('Please check your internet connectivity..',undefined);
         }
